@@ -1,3 +1,9 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     direction: rtl;
 }
@@ -42,18 +48,17 @@ body{
     width: 0px;
     height: 40px;
     background-color: green;
-
-    animation-fill-mode: forwards;
+   
+   position: relative;
     animation-name: eman;
     animation-duration: 6s;
     animation-delay: 6s;
-   
+   animation-iteration-count: infinite;
     animation-direction: reverse;
- 
-}
+   
 @keyframes eman{
-    0%{width: 0px; }
-    100%{ width: 100%;}
+    0%{left: 0px;top:0; }
+    100%{ left: 100%;top:0;}
  
 }
 .d3{ 
@@ -65,7 +70,7 @@ body{
     animation-name: eman;
     animation-duration: 6s;
     animation-delay: 12s;
-   
+   position: relative;
     
 }
 @keyframes eman{
@@ -159,3 +164,94 @@ body{
     0%{width: 0px;}
     100%{ width: 100%;}
 }
+
+.d9{
+    visibility: hidden;
+    width: 100%;
+    height: 400px;
+    background-image: url(image/1.jpg);
+    background-size: cover;
+    /* background:linear-gradient(blue,red); */
+    animation-name: eman1;
+    animation-duration: 6s;
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: linear;  سرعة متساوية */
+    animation-timing-function: ease;/* يبدئ بطيئ بعدين يسرع بعدين يرجع بطيئ*/
+    /* animation-timing-function: ease-in; يبدئ ببطئ بعدين يسرع للنهاية */
+    /* animation-timing-function: ease-out;  يسرع بعدين يبطئ في الاخير*/
+    /* animation-timing-function: ease-in-out ; نفس ease */
+    animation-play-state: running;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; الافتراضي */
+    /* animation-direction: alternate-reverse; تقسيم الخطوات في الحركة عند 50% حركة وعند 70 حركة وعند 100 جركة */
+     animation-fill-mode: forwards; /*يوقف عمد اخر قيمة وصل لها مايرجعش لاصله */
+   /* animation-fill-mode: backwards; الحالة 0% تشتغل من البداية ماينتظر للديلي */
+   /* animation-fill-mode: both; */
+   position:absolute;
+    /* border-top-right-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+  /* animation: name duration timing-function  dalay itriation-count dircation fill-mode play-state ;   */
+  animation-direction: reverse; 
+}
+.div9:hover{
+    animation-play-state: paused;
+}
+@keyframes eman1{
+    0%{left: 0px; visibility:visible;}
+    100%{left: 100%;visibility:visible }
+    
+    
+}
+.d10{ 
+    width: 100%;
+    height: 400px;
+    background-image: url(image/img.JPG);
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-name: eman1;
+    animation-duration: 6s;
+    animation-delay: 6s;
+     position:absolute; 
+  
+    visibility: hidden;
+}
+@keyframes eman1{
+    0%{left: 0px; visibility:visible}
+    100%{ left: 100%;visibility:visible;}
+ 
+}
+.d11{ visibility: hidden;
+    width: 100%;
+    height: 400px;
+    background-image: url(image/15.JPG);
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-name: eman1;
+    animation-duration: 6s;
+    animation-delay: 12s;
+     position:absolute; 
+     animation-direction: reverse;
+}
+@keyframes eman1{
+    0%{left: 0px; visibility:visible}
+    100%{ left: 100%;visibility:visible}
+}
+.d12{ visibility: hidden;
+    width: 100%;
+    height: 400px;
+    background-image: url(image/2.JPG);
+    background-size: cover;
+    animation-fill-mode: forwards;
+    animation-name: eman1;
+    animation-duration: 6s;
+    animation-delay: 18s;
+     position:absolute; 
+ 
+    
+}
+@keyframes eman1{
+    0%{left: 0px;visibility:visible}
+    100%{ left: 100%;visibility:visible}
+}
+
+

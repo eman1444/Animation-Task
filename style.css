@@ -1,170 +1,331 @@
-
-
-*{
-    margin: 0px;
-    padding: 0px;
+.div1 {
+    position: relative;
 }
-body{
-    direction: rtl;
-}
-.div1{
-    
-    width: 0;
+.div1 span{
+    display: block;
+    position: absolute;
+    top: 0;
     height: 40px;
-    background-color:red;
+    width: 80px;
+    /* border-radius: 50%; */
+    background-color: blueviolet;
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out;
+}
+.div1 .s1{
+    left: 0px;
+    animation-delay:1s ;
+}
+.div1 .s2{
+    left: 4px;
+    animation-delay:1.5s ;
+}
+.div1 .s3{
+    left: 6px;
+    animation-delay:2s ;
+}
+.div1 .s4{
+    left: 8px;
+    animation-delay:2.5s ;
+}
+@keyframes eman2{
+    100%{
+width: 100%;
+        left: 100%;
+        opacity: 0.3;
+        transform: translateY(0);
+        box-shadow: 5px 5px 5px black;
+        
+    }
+    0%, 50%{
+        left:0px;
+        width: 80px;
+            opacity: 1;
+            transform: translateY(-10px);
+            box-shadow: 5px 5px 5px rgb(168, 103, 103);
+          
+        
+    }
+}
+/* ///////////////////////////// */
+.d2 {
+    position: relative;
+}
+.d2 span{
+    display: inline;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 0px;
+    /* border-radius: 50%; */
+    background-color:rgb(69, 69, 134);
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out reverse;
+
+}
+.d2 .s1{
   
-    /* background:linear-gradient(blue,red); */
-    animation-name: eman;
-    animation-duration: 6s;
-    /* animation-iteration-count: infinite; */
-    /* animation-timing-function: linear;  سرعة متساوية */
-    animation-timing-function: ease;/* يبدئ بطيئ بعدين يسرع بعدين يرجع بطيئ*/
-    /* animation-timing-function: ease-in; يبدئ ببطئ بعدين يسرع للنهاية */
-    /* animation-timing-function: ease-out;  يسرع بعدين يبطئ في الاخير*/
-    /* animation-timing-function: ease-in-out ; نفس ease */
-    animation-play-state: running;
-    /* animation-direction: reverse; */
-    /* animation-direction: alternate; الافتراضي */
-    /* animation-direction: alternate-reverse; تقسيم الخطوات في الحركة عند 50% حركة وعند 70 حركة وعند 100 جركة */
-     animation-fill-mode: forwards; /*يوقف عمد اخر قيمة وصل لها مايرجعش لاصله */
-   /* animation-fill-mode: backwards; الحالة 0% تشتغل من البداية ماينتظر للديلي */
-   /* animation-fill-mode: both; */
-
-    /* border-top-right-radius: 20px; */
-    /* border-bottom-right-radius: 20px; */
-  /* animation: name duration timing-function  dalay itriation-count dircation fill-mode play-state ;   */
-    
+    background-color:rgb(69, 69, 134);
+    left: 0px;
+    animation-delay:4s ;
 }
-.div1:hover{
-    animation-play-state: paused;
+.d2 .s2{
+    background-color:rgb(69, 69, 134);
+    left: 4px;
+    animation-delay:4.5s ;
 }
-@keyframes eman{
-    0%{width: 0px;}
-    100%{width: 100%; }
-    
-    
+.d2 .s3{
+    background-color:rgb(69, 69, 134);
+    left: 6px;
+    animation-delay:5s ;
 }
-.d2{ 
-    width: 0px;
+.d2 .s4{
+    background-color:rgb(69, 69, 134);
+    left: 8px;
+    animation-delay:5.5s ;
+}
+/* /////////////////////////////////////// */
+.d3 {
+    position: relative;
+}
+.d3 span{
+    display: inline;
+    position: absolute;
+    top: 0;
     height: 40px;
-    background-color: green;
-
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 6s;
-   
-    animation-direction: reverse;
- 
-}
-@keyframes eman{
-    0%{width: 0px; }
-    100%{ width: 100%;}
- 
-}
-.d3{ 
     width: 0px;
-    height: 40px;
-    background-color:black;
-    background-size: cover;
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 12s;
-   
-    
+    /* border-radius: 50%; */
+    background-color: rgb(34, 28, 109);
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out ;
+
 }
-@keyframes eman{
-    0%{width: 0px;}
-    100%{ width: 100%;}
+.d3 .s1{
+  
+    background-color: rgb(34, 28, 109);
+    left: 0px;
+    animation-delay:8s ;
 }
+.d3 .s2{
+    background-color: rgb(34, 28, 109);
+    left: 4px;
+    animation-delay:8.5s ;
+}
+.d3 .s3{
+    background-color: rgb(34, 28, 109);
+    left: 6px;
+    animation-delay:9s ;
+}
+.d3 .s4{
+    background-color: rgb(34, 28, 109);
+    left: 8px;
+    animation-delay:9.5s ;
+}
+/* ////////////////////////////////////// */
 .d4 {
-   
-    width: 0px;
+    position: relative;
+}
+.d4 span{
+    display: inline;
+    position: absolute;
+    top: 0;
     height: 40px;
+    width: 0px;
+    /* border-radius: 50%; */
+    background-color: green;
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out  reverse;
+
+}
+.d4 .s1{
+  
+   
+    left: 0px;
+    animation-delay:12s ;
+    background-color: green;
+}
+.d4 .s2{
+   
+    left: 4px;
+    animation-delay:12.5s ;
+    background-color: green;
+}
+.d4 .s3{
+    
+    left: 6px;
+    animation-delay:13s ;
+    background-color: green;
+}
+.d4 .s4{
+   
+    left: 8px;
+    animation-delay:13.5s ;
+    background-color: green;
+}
+/* ////////////////////////////////// */
+.d5 {
+    position: relative;
+}
+.d5 span{
+    display: inline;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 0px;
+    /* border-radius: 50%; */
+    background-color: rgb(28, 9, 46);
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out  ;
+
+}
+.d5 .s1{
+  
+   
+    left: 0px;
+    animation-delay:16s ;
+    background-color: rgb(28, 9, 46);
+}
+.d5 .s2{
+   
+    left: 4px;
+    animation-delay:16.5s ;
+    background-color: rgb(40, 13, 65);
+}
+.d5 .s3{
+    
+    left: 6px;
+    animation-delay:17s ;
+    background-color: rgb(52, 18, 85);
+}
+.d5 .s4{
+   
+    left: 8px;
+    animation-delay:17.5s ;
+    background-color: rgb(63, 22, 104);
+}
+/* ////////////////////////////// */
+.d6 {
+    position: relative;
+}
+.d6 span{
+    display: inline;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 0px;
+    /* border-radius: 50%; */
+    background-color:black;
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out reverse ;
+
+}
+.d6 .s1{
+  
+   
+    left: 0px;
+    animation-delay:20s ;
+    background-color:black;
+}
+.d6 .s2{
+   
+    left: 4px;
+    animation-delay:20.5s ;
+    background-color:black;
+}
+.d6 .s3{
+    
+    left: 6px;
+    animation-delay:21s ;
+    background-color: black;
+}
+.d6 .s4{
+   
+    left: 8px;
+    animation-delay:21.5s ;
+    background-color: black;
+}
+/* ///////////////////////////// */
+.d7 {
+    position: relative;
+}
+.d7 span{
+    display: inline;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 0px;
+    /* border-radius: 50%; */
     background-color:beige;
-    background-size: cover;
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 18s;
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out  ;
+
+}
+.d7 .s1{
   
-    animation-direction: reverse;
-    
-}
-
-@keyframes eman{
-    0%{width: 0px;}
-    100%{ width: 100%;}
-}
-
-
-.d5{ 
-    width: 0px;
-    height: 40px;
-    background-color:red;
-    background-size: cover;
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 24s;
-  
-    
-}
-@keyframes eman{
-    0%{width: 0px;}
-    100%{ width: 100%;}
-}
-.d6{ 
-    width: 0px;
-    height: 40px;
-    background-color:rgb(169, 165, 165);
-    background-size: cover;
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 30s;
-    animation-direction: reverse;
    
+    left: 0px;
+    animation-delay:24s ;
+    background-color:beige;
+}
+.d7 .s2{
+   
+    left: 4px;
+    animation-delay:24.5s ;
+    background-color:beige;
+}
+.d7 .s3{
     
+    left: 6px;
+    animation-delay:25s ;
+    background-color: beige;
 }
-@keyframes eman{
-    0%{width: 0px;}
-    100%{ width: 100%;}
+.d7 .s4{
+   
+    left: 8px;
+    animation-delay:25.5s ;
+    background-color: beige;
 }
-.d7{ 
-    width: 0px;
+/* //////////////////////////////// */
+.d8{
+    position: relative;
+}
+.d8 span{
+    display: inline;
+    position: absolute;
+    top: 0;
     height: 40px;
-    background-color:rgb(8, 8, 8);
-    background-size: cover;
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 36s;
-  
-    
-}
-@keyframes eman{
-    0%{width: 0px;}
-    100%{ width: 100%;}
-}
-.d8{ 
     width: 0px;
-    height: 40px;
-    background-color:rgb(97, 95, 95);
-    background-size: cover;
-    animation-fill-mode: forwards;
-    animation-name: eman;
-    animation-duration: 6s;
-    animation-delay: 42s;
+    /* border-radius: 50%; */
+    background-color:red;
+    opacity: 0.5s;
+    animation: eman2 2s 1 ease-in-out reverse ;
+
+}
+.d8 .s1{
   
-    animation-direction: reverse;
+   
+    left: 0px;
+    animation-delay:28s ;
+    background-color:red;
+}
+.d8 .s2{
+   
+    left: 4px;
+    animation-delay:28.5s ;
+    background-color:red;
+}
+.d8 .s3{
     
+    left: 6px;
+    animation-delay:29s ;
+    background-color:red;}
+.d8 .s4{
+   
+    left: 8px;
+    animation-delay:29.5s ;
+    background-color: red;
 }
-@keyframes eman{
-    0%{width: 0px;}
-    100%{ width: 100%;}
-}
+/* ///////////////////////////////////////////////////pictur */
 
 .d9{
     visibility: hidden;
